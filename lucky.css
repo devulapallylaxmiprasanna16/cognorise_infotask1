@@ -1,0 +1,464 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #fff; /* Changed to white */
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff; /* Changed to white */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    line-height: 40px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-nav a:hover {
+    color: #758EB7; /* Changed to specified hover color */
+}
+
+.hamburger {
+    display: none;
+    font-size: 50px; /* Increased size for better visibility */
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    
+    
+    
+}
+
+/* Landing Page */
+.landing {
+    background: linear-gradient(to bottom, #f9f9f9, #fff); /* Light gradient background */
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.landing-content {
+    margin-top: 20px;
+}
+
+.typing-container {
+    margin-bottom: 20px;
+}
+
+.landing-image-box {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.landing-image {
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 0 10px #758EB7; /* Shadow color */
+    border: 1px solid white; /* Border color */
+    margin-bottom: 10px;
+}
+
+.landing-image img {
+    width: 100%;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease;
+    
+}
+.social-media a {
+    display: inline-block;
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    text-align: center;
+    line-height: 200px; /* Aligns the icon vertically */
+    color: #333; /* Icon color, adjust as needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-media a i {
+    font-size: 50px; /* Adjust font size to fit the container */
+}
+
+.social-media a:hover {
+    color: #758EB7; /* Change icon color on hover, adjust as needed */
+}
+
+
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.skills h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+}
+
+.skill-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #758EB7;
+    width: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    transition: width 1s ease;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 300px;
+    text-align: left;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+
+.projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 300px;
+    text-align: left;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #758EB7; /* Updated button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #6478a8;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 95%;
+
+    .social-media a {
+        display: inline-block;
+        width: 50px; /* Set width */
+        height: 50px; /* Set height */
+        text-align: center;
+        line-height: 200px; /* Aligns the icon vertically */
+        color: #fff; /* Icon color, adjust as needed */
+        transition: color 0.3s ease; /* Smooth color transition */
+        
+    }
+    
+    .social-media a i {
+        font-size: 50px; /* Adjust font size to fit the container */
+    }
+    
+    .social-media a:hover {
+        color: #758EB7; /* Change icon color on hover, adjust as needed */
+}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #fff; /* Changed to white */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+    
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+/* Experience Section */
+.experience {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.experience .title {
+    margin-bottom: 20px;
+}
+
+.experience h2 {
+    font-size: 30px;
+}
+
+.experience .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience .box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.experience .box h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.experience .box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experience .box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.certificate {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.certificate h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.certificate-box {
+    margin: 6px 0;
+}
+
+.certificate-button {
+    background-color: #758EB7; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-button:hover {
+    background-color: #6478a8;
+}
+.certificate {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.certificate h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.certificate-box {
+    margin: 20px 0;
+}
+
+.certificate-thumbnail {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate-thumbnail:hover {
+    transform: scale(1.05);
+}
+        
+
+
+
